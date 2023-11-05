@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Me - Madina Rustamova</title>
+    <link rel="stylesheet" type="text/css" href="contact-styles.css">
+
+<body>
+    <div class="contact-container">
+        <div class="contact-header">
+            <h1>Contact Me</h1>
+            <p class="italic-text">Feel free to get in touch with me.</p>
+        </div>
+        <div class="contact-form">
+            <form action="process_form.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="back-to-home">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </div>
+</body>
+</html>
