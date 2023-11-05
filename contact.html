@@ -6,6 +6,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button onclick="goBack()">&larr;</button>
+
+    <script>
+    function goBack() {
+    window.history.back();
+    }
+    </script>
     <div class="main-body">
         <div class="main-inside">
             <div class="main-inside-content">
@@ -14,16 +21,26 @@
                 <p>If you'd like to get in touch with me, you can reach out through the following methods:</p>
                 <ul>
                     <li>Email: <a href="mailto:mrustamova7956@ada.edu.az">  <i class="fa-regular fa-envelope"></i> Email</a></li>
-                    <li>Phone: <a href="tel:+994552424405"><i class="fa fa-phone" style="font-size:10px;color:rgb(47, 109, 56)"></i>Phone</a></a></li>
+                    <li>Phone: <a href="tel:+994552424405">Phone</a></a></li>
                 <p>You can also use the contact form below to send me a message:</p>
-                <form action="process_contact.php" method="post">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" required><br>
-                    <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" required><br>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" required></textarea><br>
-                    <button type="submit">Send Message</button>
+                <hr class="hr-style">
+        
+                <form action="mailto:mrusatmova7956@ada.edu.az" method="post" enctype="application/x-www-form-urlencoded">
+        
+                    <lable for="subject">Subject:</lable> <br />
+                    <input type="text" name="subject" placeholder="Subject" /> <br />
+        
+                    <lable for="email">Email:</lable> <br />
+                    <input type="email" name="" placeholder="Email" /> <br />
+        
+                    <lable for="message">Message:</lable> <br />
+                    <textarea name="message" cols="30" rows="10"></textarea> <br />
+        
+                    <lable for="subscribe">Subscribe to newsletter</lable>
+                    <input type="checkbox" name="subscribe" /> <br />
+                    
+                    <input class = "submit" type="submit" value="Send" />
+        
                 </form>
             </div>
         </div>

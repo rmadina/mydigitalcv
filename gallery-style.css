@@ -1,0 +1,42 @@
+/* style.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(Photo.jpg);
+}
+
+.main-container {
+    display: flex;
+    width: 80%;
+    border: 2px solid #333; /* Vertical line border */
+}
+
+.left-half {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.vertical-line {
+    border-right: 2px solid #333; /* Vertical line style */
+}
+
+.right-half {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.main-inside {
+    padding: 20px;
+}
+
+/* Add your styles for the image gallery and content in the right-half section as needed */
