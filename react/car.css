@@ -1,0 +1,15 @@
+.car-info {
+    background-color: red;
+    width: 200px;
+    border: 1px solid-red;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  
+  }
+  
+  .car-info img{
+    width: 85%;
+  }
